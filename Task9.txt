@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package task.pkg9;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author rishi
+ */
+public class Task9 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Enter first number:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        System.out.println("Enter second number:");
+        Scanner s=new Scanner(System.in);
+        int b=s.nextInt();
+        System.out.println("Enter third number:");
+        Scanner scan=new Scanner(System.in);
+        int c=scan.nextInt();
+        System.out.println("The smallest nuber is"+smallest(a,b,c));
+        
+    }
+
+    private static String smallest(int a, int b, int c) {
+       
+       if(a<b)
+        {
+           int s;
+            if(a<c)
+                s=a;
+            else
+                s=c;
+        }
+       else
+       {
+           int s;
+           if(b<c)
+               s=b;
+           else
+               s=c;
+       }
+        String s = null;
+        return s;
+    }
+}    
+

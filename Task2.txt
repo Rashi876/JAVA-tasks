@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package task2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author rishi
+ */
+public class Task2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int sum=0,c=0,s=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first binary number: ");
+        int b1=sc.nextInt();
+        System.out.println("Enter the second binary number: ");
+        int b2=sc.nextInt();
+        while(b1!=0&&b2!=0)
+        {
+            s=(b1%10+b2%10+c)%2;
+            c=(b1%10+b2%10+c)/2;
+            sum=sum*10+s;
+            b1=b1/10;
+            b2=b2/10;
+           
+        }
+        System.out.println("The sum is "+sum+"carry is"+c);
+    }
+    
+}

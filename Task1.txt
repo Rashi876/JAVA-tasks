@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package task1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author rishi
+ */
+public class Task1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Enter the Radius of the circle");
+        Scanner scan= new Scanner(System.in);
+                int r=scan.nextInt();
+                float area,peri;
+                area=(float) (3.14*r*r);
+                peri=(float) (2*3.14*r);
+                System.out.println(String.format("Area=%.2f",area));
+                System.out.println(String.format("Perimeter=%.2f3",peri));
+                
+                
+    }
+    
+}
